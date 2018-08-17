@@ -292,7 +292,7 @@
     <script>
       const Http = new XMLHttpRequest();
         const url='https://digitalfidelity.azure-api.net/pets/pet/2';
-        Http.setRequestHeader(Ocp-Apim-Subscription-Key, f04f4ce1dd7847189364fcfab801c70f);
+        Http.setRequestHeader('Ocp-Apim-Subscription-Key', 'f04f4ce1dd7847189364fcfab801c70f');
         Http.open("GET", url);
         Http.send();
         Http.onreadystatechange=(e)=>{
