@@ -290,7 +290,7 @@
     <!-- Custom scripts for this template -->
   
  
-     <script type="text/javascript">
+     <script>
         const Http = new XMLHttpRequest();
         const url='https://digitalfidelity.azure-api.net/pets/pet/2';
         Http.setRequestHeader('Ocp-Apim-Subscription-Key', '23bbab5000134046be3527aa1c655596');
@@ -298,9 +298,7 @@
         Http.send();
         Http.onreadystatechange=(e)=>{
         console.log(Http.responseText);
-
-        
-</script>
+    </script>
   
     <script src="js/resume.min.js"></script>
     <script>
