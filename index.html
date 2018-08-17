@@ -290,13 +290,37 @@
     <!-- Custom scripts for this template -->
   
     <script>
-      const Http = new XMLHttpRequest();
+      /*const Http = new XMLHttpRequest();
         const url='https://digitalfidelity.azure-api.net/pets/pet/2';
         Http.setRequestHeader('Ocp-Apim-Subscription-Key', '23bbab5000134046be3527aa1c655596');
         Http.open("GET", url);
         Http.send();
         Http.onreadystatechange=(e)=>{
-        console.log(Http.responseText)
+        console.log(Http.responseText)*/
+        <script type="text/javascript">
+        $(function() {
+            var params = {
+                // Request parameters
+            };
+
+            $.ajax({
+                url: "https://digitalfidelity.azure-api.net/pets/pet/{petId}?" + $.param(params),
+                beforeSend: function(xhrObj){
+                    // Request headers
+                    xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","23bbab5000134046be3527aa1c655596");
+                },
+                type: "GET",
+                // Request body
+                data: "{body}",
+            })
+            .done(function(data) {
+                alert("success");
+            })
+            .fail(function() {
+                alert("error");
+            });
+        });
+</script>
       }
     </script>
     <script src="js/resume.min.js"></script>
