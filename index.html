@@ -302,6 +302,8 @@
                 beforeSend: function(xhrObj){
                     // Request headers
                     xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","23bbab5000134046be3527aa1c655596");
+                    xhrObj.setRequestHeader("Ocp-Apim-Trace","true");
+                    
                 },
                 type: "GET",
                 // Request body
