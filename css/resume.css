@@ -82,6 +82,16 @@ h2 {
   text-transform: uppercase;
 }
 
+.card {
+  max-height: 430px;
+  max-width: 300px;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
