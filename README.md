@@ -1,1 +1,1 @@
-Online Resume at www.theOluwafemi.github.io
+Online Resume version one at https://theoluwafemi.netlify.com/
